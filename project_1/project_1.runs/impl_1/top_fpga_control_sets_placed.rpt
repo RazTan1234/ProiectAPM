@@ -1,0 +1,84 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Oct 15 15:29:46 2026
+| Host         : HP-1 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_fpga_control_sets_placed.rpt
+| Design       : top_fpga
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     6 |
+|    Minimum number of control sets                        |     6 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    25 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     6 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               4 |            3 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              14 |            5 |
+| Yes          | Yes                   | No                     |              27 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-------------------------------+--------------------+------------------+----------------+--------------+
+|     Clock Signal    |         Enable Signal         |  Set/Reset Signal  | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------+-------------------------------+--------------------+------------------+----------------+--------------+
+|  divclk/clk_out_seg |                               | display/DP_i_1_n_0 |                1 |              1 |         1.00 |
+|  divclk/clk_out_seg |                               | divclk/clear       |                2 |              3 |         1.50 |
+|  divclk/CLK         | cpu_inst/program_counter/E[0] | divclk/clear       |                2 |              6 |         3.00 |
+|  divclk/CLK         | cpu_inst/program_counter/sel  | divclk/clear       |                3 |              8 |         2.67 |
+|  divclk/clk_out_seg |                               |                    |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG      | reset_IBUF                    | divclk/clear       |                7 |             27 |         3.86 |
++---------------------+-------------------------------+--------------------+------------------+----------------+--------------+
+
+

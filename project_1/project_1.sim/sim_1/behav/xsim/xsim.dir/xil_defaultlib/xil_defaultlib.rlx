@@ -1,0 +1,13 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/Users/student/Desktop/321CD/apm/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+,,,,,,cpu_testbench,,,,,,,,
+C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/imports/src/cpu.v,1791459216,verilog,,C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/imports/src/memory.v,,CPU,,,,,,,,
+C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/imports/src/memory.v,1791469412,verilog,,C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sim_1/new/cpu_testbench.v,,MEMORY,,,,,,,,
+C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/new/ACCUMULATOR.v,1792064098,verilog,,C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/new/ALU.v,,ACCUMULATOR,,,,,,,,
+C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/new/ALU.v,1791462244,verilog,,C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/new/DECODER.v,,ALU,,,,,,,,
+C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/new/DECODER.v,1792065738,verilog,,C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/new/MUX2_1.v,,DECODER,,,,,,,,
+C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/new/MUX2_1.v,1791462248,verilog,,C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/new/PC.v,,MUX2_1,,,,,,,,
+C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/new/PC.v,1791469363,verilog,,C:/Users/student/Desktop/321CD/apm/project_1/project_1.srcs/sources_1/imports/src/cpu.v,,PC,,,,,,,,
